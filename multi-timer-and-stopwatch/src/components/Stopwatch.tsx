@@ -11,14 +11,14 @@ import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import TimerIcon from '@mui/icons-material/Timer';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+// const bull = (
+//   <Box
+//     component="span"
+//     sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+//   >
+//     •
+//   </Box>
+// );
 
 function Stopwatch(): JSX.Element {
   const {

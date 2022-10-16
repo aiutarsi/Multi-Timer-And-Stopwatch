@@ -4,22 +4,21 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 import IconButton from '@mui/material/IconButton';
 import TimerIcon from '@mui/icons-material/Timer';
-import usePersisit from './Persisit';
 import Stopwatch from './Stopwatch';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
-function AddStopwatch(props:JSX.Element[]) {
+function AddStopwatch() {
 
-  const addStopwatch = (val: JSX.Element) => {
-    props.data.push((<Stopwatch/>));
-  }
+  // const addStopwatch = (val: JSX.Element) => {
+  //   props.data.push((<Stopwatch/>));
+  // }
 
   return (
     <div>
       <Box sx={{ border: '1px dashed grey' }}>
         <Grid container spacing={2} alignItems="center" justifyItems="center">
           <Grid xs={3}>
-            <IconButton aria-label="delete" onClick={addStopwatch}>
+            <IconButton aria-label="delete">
               <AddCircleOutlineIcon/>
             </IconButton>
           </Grid>

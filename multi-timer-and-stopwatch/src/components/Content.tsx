@@ -2,20 +2,16 @@ import React, { useState, useEffect, createContext } from 'react';
 import Timer from './Timer';
 import Stopwatch from './Stopwatch';
 import AddStopwatch from './AddStopwatch';
-import usePersisit from './Persisit';
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
-export const dataStopwatchContext = createContext(undefined);
-export const keyStopwatchContext = createContext(undefined);
-
 function Content() {
-  const [keyStopwatch, setKeyStopwatch] = useState<number>(0);
-  const [dataStopwatch] = useState<Object>({0:<Stopwatch/>});
+  // const [keyStopwatch, setKeyStopwatch] = useState<number>(0);
+  // const [dataStopwatch] = useState<Object>({0:<Stopwatch/>});
 
-  const val = {
-    keyStopwatch,
-    dataStopwatch,
-  };
+  // const val = {
+  //   keyStopwatch,
+  //   dataStopwatch,
+  // };
 
   // const addStopwatch = (val: JSX.Element) => {
   //   dataStopwatch.push((<Stopwatch/>));
@@ -43,24 +39,34 @@ function Content() {
   return (
     <div>
       <Grid container spacing={2} alignItems="center" justifyItems="center" flexDirection="column">
-        {
-          () => {
-            for( const[val] of Object.values(dataStopwatch)) {
-              
-            }
-          }
-        }
-        {dataStopwatch.map( (value) => (
-          <Grid xs={10}>
-            {value}
-          </Grid>
-        ))}
-        <Grid xs={10}>
-          <AddStopwatch value={val}/>
-        </Grid>
+        <Grid xs={10}><Stopwatch/></Grid>
+        <Grid xs={10}><Stopwatch/></Grid>
+        <Grid xs={10}><AddStopwatch/></Grid>
       </Grid>
     </div>
   )
+
+  // return (
+  //   <div>
+  //     <Grid container spacing={2} alignItems="center" justifyItems="center" flexDirection="column">
+  //       {
+  //         () => {
+  //           for( const[val] of Object.values(dataStopwatch)) {
+
+  //           }
+  //         }
+  //       }
+  //       {dataStopwatch.map( (value) => (
+  //         <Grid xs={10}>
+  //           {value}
+  //         </Grid>
+  //       ))}
+  //       <Grid xs={10}>
+  //         <AddStopwatch value={val}/>
+  //       </Grid>
+  //     </Grid>
+  //   </div>
+  // )
 }
 
 export default Content;
