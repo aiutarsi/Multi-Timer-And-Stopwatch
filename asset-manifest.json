@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Multi-Timer-And-Stopwatch/static/css/main.624e7192.css",
+    "main.js": "/Multi-Timer-And-Stopwatch/static/js/main.2d697084.js",
+    "static/js/787.a0b08a6a.chunk.js": "/Multi-Timer-And-Stopwatch/static/js/787.a0b08a6a.chunk.js",
+    "index.html": "/Multi-Timer-And-Stopwatch/index.html",
+    "main.624e7192.css.map": "/Multi-Timer-And-Stopwatch/static/css/main.624e7192.css.map",
+    "main.2d697084.js.map": "/Multi-Timer-And-Stopwatch/static/js/main.2d697084.js.map",
+    "787.a0b08a6a.chunk.js.map": "/Multi-Timer-And-Stopwatch/static/js/787.a0b08a6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.624e7192.css",
+    "static/js/main.2d697084.js"
+  ]
+}
